@@ -37,7 +37,10 @@ MODEL = "gemini-2.5-flash"
 # Geração de memórias persistentes após cada turno do agente
 async def generate_memories_callback(callback_context: CallbackContext):
     """Envia a sessão ao Memory Bank para persistir fatos e preferências do usuário."""
-    await callback_context.add_session_to_memory()
+    try:
+        await callback_context.add_session_to_memory()
+    except Exception:
+        pass
     return None
 
 
