@@ -1,0 +1,32 @@
+{
+  "eval_cases": [
+    {
+      "eval_case_id": "greeting_and_capabilities",
+      "prompt": {
+        "role": "user",
+        "parts": [{"text": "Olá! O que você pode fazer pela minha estufa ou plantas em casa?"}]
+      }
+    },
+    {
+      "eval_case_id": "pet_friendly_recommendation",
+      "prompt": {
+        "role": "user",
+        "parts": [{"text": "Quais opções de plantas da estufa são seguras e não tóxicas para quem tem gatos?"}]
+      }
+    },
+    {
+      "eval_case_id": "watering_calculator",
+      "prompt": {
+        "role": "user",
+        "parts": [{"text": "Comprei uma samambaia em um vaso de 3 litros. A temperatura em casa fica em 26 graus. Com que frequência e quantidade de água devo regar?"}]
+      }
+    },
+    {
+      "eval_case_id": "catalog_specific_lookup",
+      "prompt": {
+        "role": "user",
+        "parts": [{"text": "Vocês têm Zamioculca no catálogo? Qual o valor e principais cuidados dela?"}]
+      }
+    }
+  ]
+}
